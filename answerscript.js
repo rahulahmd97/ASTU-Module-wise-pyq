@@ -15,7 +15,7 @@ async function loadAnswer(questionId, button) {
 
     try {
 
-        const response = await fetch("/3rdSem/ssmodule1.json");
+        const response = await fetch("ssmodule1.json");
 
         if (!response.ok) {
             throw new Error("HTTP " + response.status);
