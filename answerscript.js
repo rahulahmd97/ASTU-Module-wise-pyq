@@ -15,7 +15,9 @@ async function loadAnswer(questionId, button) {
 
     try {
 
-        const response = await fetch("https://cdn.jsdelivr.net/gh/rahulahmd97/ASTU-Module-wise-pyq@main/ssmodule1.json"");
+        const response = await fetch(
+    "https://cdn.jsdelivr.net/gh/rahulahmd97/ASTU-Module-wise-pyq@main/ssmodule1.json"
+);
 
         if (!response.ok) {
             throw new Error("HTTP " + response.status);
